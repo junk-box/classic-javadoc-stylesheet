@@ -1,6 +1,10 @@
 (function() {
-	var css = "http://junk-box.appspot.com/stylesheet/classic-javadoc-stylesheet/classic-stylesheet.css";
-	[packageListFrame, packageFrame, classFrame].forEach(function(frame) {
-		frame.document.getElementsByTagName("link")[0].href = css
-	});
-})()
+	var css = "https://junk-box.appspot.com/stylesheet/classic-javadoc-stylesheet/classic-stylesheet.css";
+	var frames = document.getElementsByTagName("frame");
+	for (var i = 0; i < frames.length; i++) {
+		var name = frames[i].name;
+		if (name == "packageListFrame" || name == "packageFrame" || name == "classFrame") {
+			frames[i].contentWindow.document.getElementsByTagName("link")[0].href = css;
+		}
+	}
+})();
