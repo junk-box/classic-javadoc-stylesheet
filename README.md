@@ -1,7 +1,7 @@
 [Classic Javadoc StyleSheet](http://junk-box.appspot.com/stylesheet/classic-javadoc-stylesheet/index.html)
 =====================================================================
 
-A stylesheet which changes javadoc after java7 to the style before java6.
+A stylesheet which changes javadoc of after Java7 to the old style of Java6.
 
 Usage
 ------------
@@ -16,7 +16,7 @@ replace css
 1. rename classic-stylesheet.css to stylesheet.css  
 2. overwrite in existing stylesheet.css  
 
-change it in bookmarklet  
+and also this bookmarklet too is possible to change the style.
 ```js
 javascript:(function(){[packageListFrame,packageFrame,classFrame].forEach(function(a){a.document.getElementsByTagName("link")[0].href="http://junk-box.appspot.com/stylesheet/classic-javadoc-stylesheet/classic-stylesheet.css"})})();
 ```
