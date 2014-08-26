@@ -16,9 +16,9 @@ replace css
 1. rename classic-stylesheet.css to stylesheet.css  
 2. overwrite in existing stylesheet.css  
 
-and also this bookmarklet too is possible to change the style.
+and this bookmarklet is possible to change the style too.
 ```js
-javascript:(function(){[packageListFrame,packageFrame,classFrame].forEach(function(a){a.document.getElementsByTagName("link")[0].href="http://junk-box.appspot.com/stylesheet/classic-javadoc-stylesheet/classic-stylesheet.css"})})();
+javascript:(function(){[packageListFrame,packageFrame,classFrame].forEach(function(a){a.document.getElementsByTagName("link")[0].href="https://junk-box.appspot.com/stylesheet/classic-javadoc-stylesheet/classic-stylesheet.css"})})();
 ```
 
 License
