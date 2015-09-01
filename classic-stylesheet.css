@@ -1,12 +1,12 @@
 /*
- * Classic Javadoc StyleSheet v1.1
+ * Classic Javadoc StyleSheet v1.2
  * http://junk-box.appspot.com/stylesheet/classic-javadoc-stylesheet/index.html
  *
- * Copyright (C) 2014 S.Ishigaki
+ * Copyright (C) 2015 S.Ishigaki
  * Licensed under the MIT license
  * http://www.opensource.org/licenses/mit-license.php
  *
- * Date: 2014-03-24
+ * Date: 2015-09-02
  */
 
 /*
@@ -297,6 +297,10 @@ h1.bar {
 	font-size: 90%;
 }
 
+h1.bar strong {
+	font-size: 110%;
+}
+
 h1.bar a {
 	font-weight: normal;
 	font-size: 16px;
@@ -330,7 +334,7 @@ h1.bar a {
 	font-weight: bold;
 }
 
-.contentContainer .description dl dd, .contentContainer .details dl dd, .serializedFormContainer dl dd {
+.contentContainer .description dl dd, .contentContainer  .serializedFormContainer dl dd {
 	margin: 10px 0 10px 40px;
 }
 
@@ -614,7 +618,7 @@ div.classUseContainer ul.blockList li.blockList h3 + table th.colFirst, div.clas
 
 .description {
 	position: relative;
-	padding-bottom: 3px
+	padding-bottom: 3px;
 }
 
 .description:after {
@@ -667,4 +671,8 @@ ul.blockList li.blockList td.colLast div.block {
 
 .strong {
 	font-weight:bold;
+}
+
+.memberNameLink {
+	font-weight: bold;
 }
