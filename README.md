@@ -1,7 +1,7 @@
-[Classic Javadoc StyleSheet](https://junk-box.github.io/classic-javadoc-stylesheet/index.html)
+[Classic Javadoc StyleSheet](https://junk-box.github.io/classic-javadoc-stylesheet/)
 =====================================================================
 
-A stylesheet that changes java7 or later javadoc to java6 or earlier styles.
+This is a stylesheet to change the javadoc of Java 7 or later to the old style of Java 6 or earlier.
 
 Usage
 ------------
