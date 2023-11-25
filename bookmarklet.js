@@ -1,5 +1,5 @@
 (function() {
-	var css = "http://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet.css";
+	var css = "https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet.css";
 	var frames = document.getElementsByTagName("frame");
 	for (var i = 0; i < frames.length; i++) {
 		var name = frames[i].name;

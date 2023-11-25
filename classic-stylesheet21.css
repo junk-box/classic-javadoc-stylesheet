@@ -1,0 +1,950 @@
+/*
+ * Classic Javadoc StyleSheet for java21 v1.0
+ * https://junk-box.github.io/classic-javadoc-stylesheet/index.html
+ * 
+ * Copyright (C) 2023 S.Ishigaki
+ * Licensed under the MIT license
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Date: 2023-11-25
+ */
+
+/*
+ * Classic style
+ */
+body {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: initial;
+}
+a:link,
+a:visited {
+	text-decoration: underline;
+}
+a:link,
+.caption a:link {
+	color: #0000ff;
+}
+a:visited,
+.caption a:visited {
+	color: #551a8b;
+}
+a[href]:hover {
+	color: #0000ff;
+	text-decoration: underline;
+}
+a[href]:hover:visited,
+a[href]:focus:visited {
+	color: #551a8b;
+}
+/*
+ * Classic style header
+ */
+.flex-header {
+	margin: 8px 8px 0;
+	border-top: solid 1px #9a9a9a;
+	border-bottom: solid 1px #9a9a9a;
+}
+.top-nav {
+	margin-top: 8px;
+	padding: 5px;
+	min-height: initial;
+	color: #000000;
+	font-size: initial;
+	background: linear-gradient(to right, #eeeeff 80%, #ffffff 80%);
+}
+#navbar-top-firstrow li {
+	text-transform: initial;
+}
+#navbar-top-firstrow li a {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: initial;
+}
+.nav-bar-cell1-rev {
+	margin: 0;
+	background-color:#00008b;
+	color: #ffffff;
+	font-weight: bold;
+}
+ul.nav-list li {
+	padding: 3px 6px;
+}
+.about-language {
+	margin: 0;
+	margin-right: 10px;
+	padding: 0;
+	height: initial;
+	font-size: 16px;
+	font-style: italic;
+}
+.about-language div {
+	margin-top: 0 !important;
+}
+.sub-nav {
+	background-color: #ffffff;
+}
+ul.sub-nav-list li {
+	font-size: 10px;
+}
+
+/*
+ * Classic style Search
+ */
+ul#ui-id-1 {
+	border: solid 2px #5c5c5c;
+	border-top: 0;
+}
+ul#ui-id-1 .ui-autocomplete-category {
+	background-color: #ccccff;
+	color: #000000;
+	border-top: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	font-size: 18px;
+	padding: 3px;
+}
+ul#ui-id-1 li.result-item {
+	font-family: monospace;
+}
+ul.ui-widget-content div.ui-menu-item-wrapper.ui-state-active {
+	background: #eeeeff;
+	border: 1px solid #eeeeff;
+}
+
+body.search-page div#result-section div.table-tabs button.page-search-header {
+	background-color: #eeeeff;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body.search-page div#result-section div.table-tabs button.page-search-header.active-table-tab {
+	background-color: #00008b;
+	color: #ffffff;
+}
+
+body.search-page div#result-section div.summary-table div.table-header {
+	display: block;
+	background-color: #ccccff;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+body.search-page div#result-section div.summary-table div.col-plain {
+	border: solid 2px #5c5c5c;
+	border-top-width: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body.search-page div#result-section div.summary-table div.col-plain.table-header {
+	border-top-width: 2px;
+}
+
+body.search-page div#result-section div.summary-table div.col-plain.table-header:nth-child(2) {
+	border-left-width: 0;
+}
+
+body.search-page div#result-section div.summary-table div.col-last {
+	border-top-width: 0;
+	border-bottom: solid 2px #5c5c5c;
+	border-right: solid 2px #5c5c5c;
+}
+
+body.search-page div#result-section div#result-container div.table-tabs span.page-search-header.active-table-tab {
+	background-color: #eeeeff;
+}
+
+/*
+ * Classic style Table
+ */
+.table-header {
+	display: none;
+}
+.col-first {
+	font-size: initial;
+	border-right: solid 2px #5c5c5c;
+}
+.col-first code,
+.col-second code {
+	font-family: monospace;
+}
+.col-first,
+.col-second,
+.col-last {
+	border-top: solid 2px #5c5c5c;
+}
+.odd-row-color {
+	background-color: #ffffff;
+}
+
+/*
+ * Classic style Overview
+ */
+.header h1.title {
+	color: #000000;
+	font-size: 24px;
+}
+body.module-index-page div.header h1.title {
+	text-align: center;
+}
+div.block {
+	color: #000000;
+	font-family: initial;
+	font-size: initial;
+}
+div.block blockquote dl dt,
+div.block blockquote dl dd {
+	margin-top: 0 !important;
+}
+#all-modules-table {
+	border: solid 2px #5c5c5c;
+}
+
+#all-modules-table .table-tabs {
+	margin: 0;
+}
+
+.summary-table {
+	width: initial;
+	border: initial;
+}
+div.table-tabs {
+	padding: 0;
+}
+#all-modules-table-tab0 {
+	padding-bottom: 0;
+	width: 100%;
+	text-align: left;
+	font-family: initial;
+	font-size: x-large;
+	background-color: #ccccff;
+}
+#all-modules-table-tab1,
+#all-modules-table-tab2,
+#all-modules-table-tab3 {
+	display: none;
+}
+
+/*
+ * Classic style Module
+ */
+.module-signature {
+	font-family: monospace;
+	font-weight: bold;
+}
+dl.notes > dt {
+	font-family: initial;
+	color: #000000;
+}
+dl.notes > dd {
+	font-family: initial;
+}
+dl.notes > dd a,
+dl.notes > dd a code {
+	font-family: initial;
+	font-size: initial;
+}
+.summary section[class$="-summary"] {
+	border: solid 2px #5c5c5c;
+	padding: 0;
+}
+section.packages-summary h2,
+section.services-summary h2,
+section.modules-summary  h2 {
+	background-color: #ccccff;
+	margin: 0;
+	padding: 4px;
+	font-size: x-large;
+}
+section.packages-summary div.caption,
+section.services-summary div.caption,
+section.modules-summary  div.caption {
+	display: none;
+}
+.details-table {
+	width: initial;
+}
+section.packages-summary .col-last a code,
+section.services-summary .col-last a code {
+	font-family: monospace;
+}
+
+/*
+ * Classic style Package
+ */
+.sub-title a {
+	font-family: monospace;
+	font-weight: bold;
+}
+.package-signature {
+	font-family: monospace;
+	font-weight: bold;
+}
+#related-package-summary,
+#class-summary {
+	border: solid 2px #5c5c5c;
+}
+#related-package-summary div.caption {
+	padding: 0;
+}
+#related-package-summary div.caption span {
+	width: 100%;
+	height: initial;
+	padding-bottom: initial;
+	background-color: #ccccff;
+	font-size: x-large;
+	color: #000000;
+}
+#related-package-summary div.summary-table div.col-plain {
+	border-top: solid 2px #5c5c5c;
+	border-right: solid 2px #5c5c5c;
+	font-weight: bold;
+}
+#class-summary #class-summary-tab1,
+#class-summary #class-summary-tab2,
+#class-summary #class-summary-tab3,
+#class-summary #class-summary-tab4,
+#class-summary #class-summary-tab5,
+#class-summary #class-summary-tab6,
+#class-summary #class-summary-tab7 {
+	display: none;;
+}
+#class-summary .table-tabs {
+	background-color: #ccccff;
+	margin: 0;
+}
+#class-summary #class-summary-tab0 {
+	background-color: #ccccff;
+	font-size: x-large;
+	font-family: initial;
+	color: #000000;
+	padding-bottom: 1px;
+}
+
+/*
+ * Classic style Class
+ */
+div.inheritance a {
+	font-family: monospace;
+	font-weight: initial;
+}
+div.inheritance {
+	margin-top: 3px;
+	font-family: monospace;
+	font-weight: bold;
+}
+#class-description dl.notes dt {
+	font-size: initial;
+}
+#class-description dl.notes dd {
+	padding-left: 40px;
+}
+div.type-signature {
+	font-family: monospace;
+}
+#class-description dl.notes dd {
+	font-size: initial;
+}
+#class-description dl.notes dd code {
+	font-family: monospace;
+}
+#class-description .block code {
+	font-family: monospace;
+}
+#nested-class-summary div.caption {
+	display: none;
+}
+#nested-class-summary div.col-first {
+	border-left: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+#nested-class-summary div.col-second {
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+#nested-class-summary div.col-last {
+	border-right: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+#annotation-interface-required-element-summary h2,
+#annotation-interface-optional-element-summary h2 {
+	margin: 0;
+	padding: 4px;
+	background-color: #ccccff;
+	font-size: x-large;
+	font-family: initial;
+	font-style: initial;
+}
+#annotation-interface-required-element-summary div.caption,
+#annotation-interface-optional-element-summary div.caption {
+	display: none;
+}
+#field-summary {
+	border: initial;
+}
+#field-summary h2 {
+	margin: 0;
+	padding: 6px 4px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+	font-style: initial;
+}
+#field-summary div.caption {
+	display: none;
+}
+#field-summary div.col-first {
+	border-left: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+#field-summary div.col-first {
+	padding: 0 4px;
+	text-align: right;
+}
+#field-summary div.col-first code {
+	margin: 0;
+	padding: 0;
+	font-size: small;
+}
+#field-summary div.col-second {
+	padding: 1px 4px;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+#field-summary div.col-last {
+	border-right: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+#field-summary div.inherited-list {
+	border: solid 2px #5c5c5c;
+	padding: 0;
+}
+#field-summary div.inherited-list h3 {
+	margin: 0;
+	padding: 3px;
+	border-bottom: solid 2px #5c5c5c;
+	background-color: #eeeeff;
+}
+#field-summary div.inherited-list code {
+	padding-left: 4px;
+	font-family: monospace;
+}
+#nested-class-summary {
+	border: initial;
+}
+#nested-class-summary > h2 {
+	margin: 0;
+	padding: 3px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+	font-style: initial;
+}
+#nested-class-summary div.inherited-list {
+	padding: 0;
+	border: solid 2px #5c5c5c;
+}
+#nested-class-summary div.inherited-list h2 {
+	margin: 0;
+	padding: 3px;
+	background-color: #eeeeff;
+	border-bottom: solid 2px #5c5c5c;
+	font-style: initial;
+}
+#nested-class-summary div.inherited-list code {
+	padding-left: 4px;
+	font-family: monospace;
+}
+#constructor-summary h2 {
+	margin: 0;
+	padding: 3px;
+	background-color: #ccccff;
+	font-size: x-large;
+	font-style: initial;
+}
+#constructor-summary div.caption {
+	display: none;
+}
+#constructor-summary div.col-constructor-name {
+	padding: 0;
+	padding-left: 3px;
+	padding-top: 1px;
+	border-top: solid 2px #5c5c5c;
+}
+#constructor-summary div.col-constructor-name code {
+	font-family: monospace;
+}
+#constructor-summary div.col-constructor-name code a {
+	font-weight: initial;
+}
+#constructor-summary div.col-constructor-name code a.member-name-link {
+	font-weight: bold;
+}
+#constructor-summary div.col-last {
+	padding-bottom: 0;
+}
+#constructor-summary div.col-last div.block {
+	margin-bottom: 4px;
+}
+#constructor-summary div.col-last div.block code {
+	font-family: monospace;
+}
+#method-summary {
+	border: initial;
+}
+#method-summary h2 {
+	margin: 0;
+	padding: 3px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+	font-style: initial;
+}
+#method-summary-table div.table-tabs {
+	display: none;
+}
+#method-summary-table div.col-first {
+	padding: 0;
+	padding-right: 2px;
+	border-left: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+	text-align: right;
+}
+#method-summary-table div.col-second {
+	padding: 1px 3px;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+#method-summary-table div.col-last {
+	border-right: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+#method-summary-table div.col-last div.block code{
+	font-family: monospace;
+}
+#method-summary div.inherited-list {
+	padding: 0;
+	border: solid 2px #5c5c5c;
+}
+#method-summary div.inherited-list h3 {
+	margin: 0;
+	padding: 3px;
+	background-color: #eeeeff;
+	border: initial;
+	border-bottom: solid 2px #5c5c5c;
+}
+#method-summary div.inherited-list code {
+	padding-left: 3px;
+	font-family: monospace;
+}
+#field-detail {
+	margin-top: 40px;
+}
+#field-detail,
+#constructor-detail,
+#method-detail {
+	padding: 0;
+	background-color: initial;
+	border: initial;
+}
+#field-detail	   h2,
+#constructor-detail h2,
+#method-detail	  h2,
+#annotation-interface-element-detail h2 {
+	margin: 0;
+	padding: 3px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+	font-style: initial;
+}
+#field-detail	   section.detail,
+#constructor-detail section.detail,
+#method-detail	  section.detail,
+#annotation-interface-element-detail section.member-details {
+	padding: 0;
+	padding-bottom: 14px;
+	border-bottom: solid 1px #9a9a9a;
+}
+#field-detail	   ul li:last-child section.detail,
+#constructor-detail ul li:last-child section.detail,
+#method-detail	  ul li:last-child section.detail {
+	border-bottom: initial;
+}
+#field-detail	   section.detail h3,
+#constructor-detail section.detail h3,
+#method-detail	  section.detail h3,
+#annotation-interface-element-detail section.detail h3 {
+	margin: 0;
+	padding: 0;
+	padding-top: 12px;
+	background-color: initial;
+	border: initial;
+	font-size: 1.17em;
+}
+#field-detail	   section.detail div.member-signature,
+#constructor-detail section.detail div.member-signature,
+#method-detail	  section.detail div.member-signature,
+#annotation-interface-element-detail section.detail div.member-signature {
+	font-family: monospace;
+}
+#field-detail	   section.detail div.member-signature span.element-name,
+#constructor-detail section.detail div.member-signature span.element-name,
+#method-detail	  section.detail div.member-signature span.element-name,
+#annotation-interface-element-detail section.detail div.member-signature span.element-name {
+	font-weight: bold;
+}
+#method-detail section.detail div.member-signature span.parameters {
+	line-height: initial;
+}
+#method-detail 
+#field-detail	   section.detail div.block,
+#constructor-detail section.detail div.block,
+#method-detail	  section.detail div.block,
+#annotation-interface-element-detail section.detail div.block {
+	margin-left: 40px;
+}
+#field-detail	   section.detail div.block code,
+#constructor-detail section.detail div.block code,
+#method-detail	  section.detail div.block code {
+	font-family: monospace;
+}
+#field-detail	   section.detail dl.notes,
+#constructor-detail section.detail dl.notes,
+#method-detail	  section.detail dl.notes,
+#annotation-interface-element-detail section.detail dl.notes {
+	margin-left: 40px;
+	margin-bottom: 0;
+}
+#field-detail	   section.detail dl.notes dt,
+#constructor-detail section.detail dl.notes dt,
+#method-detail	  section.detail dl.notes dt,
+#annotation-interface-element-detail section.detail dl.notes dt {
+	font-size: initial;
+}
+#field-detail	   section.detail dl.notes dd,
+#constructor-detail section.detail dl.notes dd,
+#method-detail	  section.detail dl.notes dd,
+#annotation-interface-element-detail section.detail dl.notes dd {
+	margin: 0;
+	margin-left: 40px;
+	font-size: initial;
+}
+#field-detail	   section.detail dl.notes dd a code,
+#constructor-detail section.detail dl.notes dd   code,
+#constructor-detail section.detail dl.notes dd   code a,
+#method-detail	  section.detail dl.notes dd a code,
+#method-detail	  section.detail dl.notes dd   code a {
+	font-family: monospace;
+}
+span.deprecated-label {
+	font-family: initial;
+	font-size: 16px;
+}
+div.deprecation-comment {
+	font-family: initial;
+	font-size: 16px;
+}
+div.deprecation-comment a code {
+	font-family: monospace;
+	font-size: 13px;
+}
+
+/*
+ * Classic style Use
+ */
+body.package-use-page div.header h1.title,
+body.class-use-page div.header h1.title {
+	text-align: center;
+}
+main > div.caption {
+	padding: 3px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+}
+main > div.caption span {
+	height: initial;
+	padding: 0;
+	background-color: #ccccff;
+}
+body.package-use-page div.summary-table div.col-first,
+body.class-use-page div.summary-table div.col-first {
+	border-left: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+body.package-use-page div.summary-table div.col-second,
+body.class-use-page div.summary-table div.col-second {
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+body.package-use-page div.summary-table div.col-last,
+body.class-use-page div.summary-table div.col-last {
+	border-right: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+}
+body.package-use-page div.summary-table.two-column-summary div.col-first,
+body.class-use-page div.summary-table.two-column-summary div.col-first {
+	padding-left: 3px;
+}
+body.package-use-page div.summary-table div.col-last div.block a,
+body.package-use-page div.summary-table div.col-last div.block a code,
+body.class-use-page div.summary-table div.col-last div.block a,
+body.class-use-page div.summary-table div.col-last div.block a code {
+	font-family: monospace;
+}
+body.package-use-page section.package-uses section.detail,
+body.class-use-page section.class-uses section.detail {
+	padding: 0;
+	background-color: initial;
+	border-width: 0;
+}
+body.package-use-page section.package-uses h2,
+body.class-use-page section.class-uses h2 {
+	padding: 4px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+	font-style: initial;
+}
+body.package-use-page section.package-uses div.caption,
+body.class-use-page section.class-uses div.caption {
+	padding-top: 0;
+	background-color: #eeeeff;
+	border: solid 2px #5c5c5c;
+	color: #000000;
+	margin-top: 15px;
+}
+body.package-use-page section.package-uses div.caption span,
+body.class-use-page section.class-uses div.caption span {
+	padding-left: 2px;
+	padding-bottom: 10px;
+	background-color: #eeeeff;
+}
+body.package-use-page div.summary-table.three-column-summary div.col-first code a,
+body.class-use-page div.summary-table.three-column-summary div.col-first code a {
+	font-weight: initial;
+}
+body.package-use-page div.summary-table.three-column-summary div.col-first,
+body.class-use-page div.summary-table.three-column-summary div.col-first {
+	font-weight: initial;
+	padding: 0;
+	padding-left: 3px;
+	padding-right: 3px;
+	text-align: right;
+}
+body.package-use-page div.summary-table.three-column-summary div.col-second,
+body.class-use-page div.summary-table.three-column-summary div.col-second {
+	padding-left: 4px;
+	padding-top: 1px;
+}
+
+/*
+ * Classic style Tree
+ */
+body.tree-page div.header,
+body.package-tree-page div.header {
+	padding-bottom: 1px;
+	border-bottom: solid 1px #9a9a9a;
+}
+body.package-tree-page div.header h1.title {
+	text-align: center;
+}
+body.tree-page div.header ul.horizontal,
+body.package-tree-page div.header ul.horizontal {
+	padding-left: 40px;
+}
+body.tree-page div.header ul.horizontal li a,
+body.package-tree-page div.header ul.horizontal li a {
+	font-size: 16px;
+}
+body.tree-page section.hierarchy h2,
+body.package-tree-page section.hierarchy h2 {
+	font-size: 1.5em;
+}
+
+/*
+ * Classic style Preview
+ */
+body.preview-list-page div.header h1 {
+	padding-bottom: 20px;
+	border-bottom: solid 4px #5c5c5c;
+	text-align: center;
+}
+body.preview-list-page div.header ul {
+	padding-left: 40px;
+}
+body.preview-list-page div.header ul li {
+	list-style: initial;
+	font-size: initial;
+}
+body.preview-list-page ul.block-list li > div {
+	border: solid 2px #5c5c5c;
+}
+body.preview-list-page ul.block-list li > div div.table-tabs {
+	margin: 0;
+}
+body.preview-list-page ul.block-list div.caption {
+	padding: 3px;
+	padding-bottom: 0;
+	background-color: #ccccff;
+	font-size: x-large;
+}
+body.preview-list-page ul.block-list div.caption span {
+	height: initial;
+	padding: 3px;
+	padding-bottom: 0;
+	background-color: #ccccff;
+}
+body.preview-list-page ul.block-list div.col-summary-item-name {
+	border-top: solid 2px #5c5c5c;
+	border-right: solid 2px #5c5c5c;
+}
+body.preview-list-page main > ul.block-list div.col-summary-item-name a {
+	font-weight: initial;
+	font-size: initial;
+}
+body.preview-list-page main > ul.block-list div.col-summary-item-name sup a {
+	font-size: 8px;
+}
+body.preview-list-page ul.block-list div.col-second {
+	border-right: solid 2px #5c5c5c;
+}
+body.preview-list-page ul.block-list div.col-last a code {
+	font-family: monospace;
+}
+
+/*
+ * Classic style New
+ */
+body.new-api-list-page div.header h1 {
+	padding-bottom: 20px;
+	border-bottom: solid 4px #5c5c5c;
+	text-align: center;
+}
+body.new-api-list-page div.header ul {
+	padding-left: 40px;
+}
+body.new-api-list-page div.header ul li {
+	list-style: initial;
+	font-size: initial;
+}
+body.new-api-list-page main > ul.block-list {
+	border: solid 2px #5c5c5c;
+}
+body.new-api-list-page main > ul.block-list li {
+	margin: 0;
+}
+body.new-api-list-page main > ul.block-list div.table-tabs {
+	background-color: #ccccff;
+	margin: 0;
+}
+body.new-api-list-page main > ul.block-list div.table-tabs div.caption {
+	padding: 5px 4px 6px 5px;
+}
+body.new-api-list-page main > ul.block-list div.table-tabs div.caption span {
+	padding: 0;
+	background-color: initial;
+	font-size: x-large;
+	font-family: initial;
+	float: initial;
+}
+body.new-api-list-page main > ul.block-list div.col-summary-item-name {
+	border-top: solid 2px #5c5c5c;
+	border-right: solid 2px #5c5c5c;
+}
+body.new-api-list-page main > ul.block-list div.col-summary-item-name a {
+	font-weight: initial;
+	font-size: initial;
+}
+body.new-api-list-page main > ul.block-list div.col-summary-item-name sup a {
+	font-size: 8px;
+}
+body.new-api-list-page ul.block-list div.col-second {
+	border-right: solid 2px #5c5c5c;
+}
+body.new-api-list-page ul.block-list div.col-last a code {
+	font-family: monospace;
+}
+
+/*
+ * Classic style Deprecated
+ */
+body.deprecated-list-page div.header h1.title {
+	padding-bottom: 20px;
+	border-bottom: solid 4px #5c5c5c;
+	text-align: center;
+}
+body.deprecated-list-page div.header ul {
+	padding-left: 40px;
+}
+body.deprecated-list-page div.header ul li {
+	list-style: initial;
+	font-size: initial;
+}
+body.deprecated-list-page main > ul.block-list {
+	border: solid 2px #5c5c5c;
+}
+body.deprecated-list-page main > ul.block-list li {
+	margin: 0;
+}
+body.deprecated-list-page main > ul.block-list div.table-tabs {
+	background-color: #ccccff;
+	margin: 0;
+}
+body.deprecated-list-page main > ul.block-list div.table-tabs div.caption {
+	padding: 5px 4px 6px 5px;
+}
+body.deprecated-list-page main > ul.block-list div.table-tabs div.caption span {
+	padding: 0;
+	background-color: #ccccff;
+	font-size: x-large;
+	font-family: initial;
+	float: initial;
+}
+body.deprecated-list-page main > ul.block-list div.col-summary-item-name {
+	border-top: solid 2px #5c5c5c;
+	border-right: solid 2px #5c5c5c;
+}
+body.deprecated-list-page main > ul.block-list div.col-summary-item-name a {
+	font-weight: initial;
+	font-size: initial;
+}
+body.deprecated-list-page main > ul.block-list div.col-summary-item-name sup a {
+	font-size: 8px;
+}
+
+body.deprecated-list-page main > ul.block-list div.col-second {
+	border-right: solid 2px #5c5c5c;
+}
+
+/*
+ * Classic style Help
+ */
+body.help-page main h1.title {
+	font-size: 145%;
+	color: #000000;
+	text-align: center;
+}
+body.help-page main ul.help-subtoc li a {
+	font-size: initial;
+}
+body.help-page main div.sub-title h2 {
+	font-size: 1.3em;
+}
+body.help-page main div.sub-title h3 {
+	font-size: 1.17em;
+}
+body.help-page main div.sub-title a,
+body.help-page main div.sub-title section.help-section a {
+	font-family: initial;
+	font-weight: initial;
+}
+

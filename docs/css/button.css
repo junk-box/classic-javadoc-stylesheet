@@ -1,0 +1,21 @@
+.download-button {
+	width: 269px;
+	height: 79px;
+	background-color: #4d6bc2;
+	border-radius: 10px;
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 21px;
+	padding-left: 22px;
+	padding-top: 15px;
+}
+
+.download-button div {
+	height: 21px;
+	display: flex;
+	align-items: center;
+}
+
+.download-button div:first-child {
+	margin-bottom: 5px;
+}
