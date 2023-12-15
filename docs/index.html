@@ -80,46 +80,46 @@
 					<h3>In the case of create a new javadoc</h3>
 					<p>Specify the stylesheetfile option to the javadoc command.</p>
 					<div class="example">
-						<p>java7 or 8</p>
-						<pre>javadoc -stylesheetfile classic-stylesheet.css ... </pre>
-						<p>java14</p>
-						<pre>javadoc -stylesheetfile classic-stylesheet14.css ... </pre>
-						<p>java17</p>
-						<pre>javadoc -stylesheetfile classic-stylesheet17.css ... </pre>
 						<p>java21</p>
 						<pre>javadoc --add-stylesheet classic-stylesheet21.css ... </pre>
+						<p>java17</p>
+						<pre>javadoc -stylesheetfile classic-stylesheet17.css ... </pre>
+						<p>java14</p>
+						<pre>javadoc -stylesheetfile classic-stylesheet14.css ... </pre>
+						<p>java7 or 8</p>
+						<pre>javadoc -stylesheetfile classic-stylesheet.css ... </pre>
 					</div>
 					<h3>To change the style of an existing javadoc</h3>
 					<div class="example">
-						<p>java7 or 8</p>
-						<pre>Rename classic-stylesheet.css to stylesheet.css</pre>
-						<p>java14</p>
-						<pre>Rename classic-stylesheet14.css to stylesheet.css</pre>
-						<p>java17</p>
-						<pre>Rename classic-stylesheet17.css to stylesheet.css</pre>
-						<p>Replace the existing stylesheet.css.</p>
 						<p>java21</p>
 						<pre>Add classic-stylesheet21.css to css</pre>
+						<p>java17</p>
+						<pre>Rename classic-stylesheet17.css to stylesheet.css</pre>
+						<p>java14</p>
+						<pre>Rename classic-stylesheet14.css to stylesheet.css</pre>
+						<p>java7 or 8</p>
+						<pre>Rename classic-stylesheet.css to stylesheet.css</pre>
+						<p>Replace the existing stylesheet.css.</p>
 					</div>
 					<p style="margin-top: 15px; margin-bottom: 0;">
 						You can also change style in your bookmarklet. Please add the following link to your bookmark.
 					<p>
 					<div class="example">
-						<p>java7 or 8</p>
+						<p>java21</p>
 						<p style="text-indent: 1em">
-							Bookmarklet: <a href="javascript:(function(){for(var b=document.getElementsByTagName(%22frame%22),a=0;a<b.length;a++){var c=b[a].name;if(%22packageListFrame%22==c||%22packageFrame%22==c||%22classFrame%22==c)b[a].contentWindow.document.getElementsByTagName(%22link%22)[0].href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet.css%22}})();">Classic Javadoc StyleSheet</a>
-						</p>
-						<p>java14</p>
-						<p style="text-indent: 1em">
-							Bookmarklet: <a href="javascript:(function(){document.getElementsByTagName(%22link%22)[0].href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet14.css%22;})()">Classic Javadoc StyleSheet14</a>
+							Bookmarklet: <a href="javascript:(function(){var cs=document.createElement(%22link%22);cs.rel=%22stylesheet%22;cs.type=%22text/css%22;cs.title=%22Style%22;cs.href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet21.css%22;document.getElementsByTagName(%22head%22)[0].appendChild(cs);})()">Classic Javadoc StyleSheet21</a>
 						</p>
 						<p>java17</p>
 						<p style="text-indent: 1em">
 							Bookmarklet: <a href="javascript:(function(){document.getElementsByTagName(%22link%22)[0].href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet17.css%22;})()">Classic Javadoc StyleSheet17</a>
 						</p>
-						<p>java21</p>
+						<p>java14</p>
 						<p style="text-indent: 1em">
-							Bookmarklet: <a href="javascript:(function(){var cs=document.createElement(%22link%22);cs.rel=%22stylesheet%22;cs.type=%22text/css%22;cs.title=%22Style%22;cs.href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet21.css%22;document.getElementsByTagName(%22head%22)[0].appendChild(cs);})()">Classic Javadoc StyleSheet21</a>
+							Bookmarklet: <a href="javascript:(function(){document.getElementsByTagName(%22link%22)[0].href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet14.css%22;})()">Classic Javadoc StyleSheet14</a>
+						</p>
+						<p>java7 or 8</p>
+						<p style="text-indent: 1em">
+							Bookmarklet: <a href="javascript:(function(){for(var b=document.getElementsByTagName(%22frame%22),a=0;a<b.length;a++){var c=b[a].name;if(%22packageListFrame%22==c||%22packageFrame%22==c||%22classFrame%22==c)b[a].contentWindow.document.getElementsByTagName(%22link%22)[0].href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet.css%22}})();">Classic Javadoc StyleSheet</a>
 						</p>
 					</div>
 				</div>

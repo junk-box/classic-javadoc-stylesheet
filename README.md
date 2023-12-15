@@ -7,53 +7,52 @@ Usage
 ------------
 
 #### In the case of create a new javadoc
-- java7 or 8  
+- java21  
 ```
-javadoc -stylesheetfile classic-stylesheet.css ... 
-```
-- java14  
-```
-javadoc -stylesheetfile classic-stylesheet14.css ... 
+javadoc --add-stylesheet classic-stylesheet21.css ... 
 ```
 - java17  
 ```
 javadoc -stylesheetfile classic-stylesheet17.css ... 
 ```
-- java21  
+- java14  
 ```
-javadoc --add-stylesheet classic-stylesheet21.css ... 
+javadoc -stylesheetfile classic-stylesheet14.css ... 
+```
+- java7 or 8  
+```
+javadoc -stylesheetfile classic-stylesheet.css ... 
 ```
 
 #### To change the style of an existing javadoc
-- java7 or 8  
-Rename classic-stylesheet.css to stylesheet.css
-- java14  
-Rename classic-stylesheet14.css to stylesheet.css
+- java21  
+Add classic-stylesheet21.css to css
 - java17  
 Rename classic-stylesheet17.css to stylesheet.css
+- java14  
+Rename classic-stylesheet14.css to stylesheet.css
+- java7 or 8  
+Rename classic-stylesheet.css to stylesheet.css
 
 Replace the existing stylesheet.css.
 
-- java21  
-Add classic-stylesheet21.css to css
-
 
 #### You can also change style in your bookmarklet. Please add the following link to your bookmark.  
-- java7 or 8  
+- java21  
 ```js
-javascript:javascript:(function(){for(var b=document.getElementsByTagName(%22frame%22),a=0;a<b.length;a++){var c=b[a].name;if(%22packageListFrame%22==c||%22packageFrame%22==c||%22classFrame%22==c)b[a].contentWindow.document.getElementsByTagName(%22link%22)[0].href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet.css%22}})();
-```
-- java14  
-```js
-javascript:(function(){document.getElementsByTagName(%22link%22)[0].href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet14.css%22;})()
+javascript:(function(){var cs=document.createElement(%22link%22);cs.rel=%22stylesheet%22;cs.type=%22text/css%22;cs.title=%22Style%22;cs.href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet21.css%22;document.getElementsByTagName(%22head%22)[0].appendChild(cs);})()
 ```
 - java17  
 ```js
 javascript:(function(){document.getElementsByTagName(%22link%22)[0].href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet17.css%22;})()
 ```
-- java21  
+- java14  
 ```js
-javascript:(function(){var cs=document.createElement(%22link%22);cs.rel=%22stylesheet%22;cs.type=%22text/css%22;cs.title=%22Style%22;cs.href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet21.css%22;document.getElementsByTagName(%22head%22)[0].appendChild(cs);})()
+javascript:(function(){document.getElementsByTagName(%22link%22)[0].href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet14.css%22;})()
+```
+- java7 or 8  
+```js
+javascript:javascript:(function(){for(var b=document.getElementsByTagName(%22frame%22),a=0;a<b.length;a++){var c=b[a].name;if(%22packageListFrame%22==c||%22packageFrame%22==c||%22classFrame%22==c)b[a].contentWindow.document.getElementsByTagName(%22link%22)[0].href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet.css%22}})();
 ```
 
 License
