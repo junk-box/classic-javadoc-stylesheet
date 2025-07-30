@@ -40,7 +40,7 @@ Replace the existing stylesheet.css.
 #### You can also change style in your bookmarklet. Please add the following link to your bookmark.  
 - java21  
 ```js
-javascript:(function(){var cs=document.createElement(%22link%22);cs.rel=%22stylesheet%22;cs.type=%22text/css%22;cs.title=%22Style%22;cs.href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet21.css%22;document.getElementsByTagName(%22head%22)[0].appendChild(cs);})()
+javascript:(function(){var cs=document.createElement(%22link%22);cs.rel=%22stylesheet%22;cs.type=%22text/css%22;cs.href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet21.css%22;document.getElementsByTagName(%22head%22)[0].appendChild(cs);})()
 ```
 - java17  
 ```js
