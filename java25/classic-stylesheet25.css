@@ -1,0 +1,1078 @@
+/*
+ * Classic Javadoc StyleSheet for java25 v1.0
+ * https://junk-box.github.io/classic-javadoc-stylesheet/index.html
+ * 
+ * Copyright (C) 2025 S.Ishigaki
+ * Licensed under the MIT license
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Date: 2025-10-04
+ */
+
+/*
+ * basic
+ */
+body {
+	color: #000000;
+	font-family: initial;
+	font-size: initial;
+	padding-top: 8px;
+}
+
+a:link,
+a:visited {
+	text-decoration: underline;
+}
+a:link,
+.caption a:link {
+	color: #0000ff;
+}
+a:visited,
+.caption a:visited {
+	color: #551a8b;
+}
+a[href]:hover {
+	color: #0000ff;
+	text-decoration: underline;
+}
+a[href]:hover:visited,
+a[href]:focus:visited {
+	color: #551a8b;
+}
+
+/*
+ * header
+ */
+header[role="banner"] {
+	margin: 0 8px;
+	border-top: solid 1px #9a9a9a;
+	border-bottom: solid 1px #9a9a9a;
+	padding-top: 8px;
+}
+header[role="banner"]:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #eeeeee;
+}
+header[role="banner"]:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 1px;
+	background-color: #eeeeee;
+}
+.top-nav {
+	height: 36px;
+	color: #000000;
+	font-size: initial;
+	background: linear-gradient(to right, #eeeeff 80%, #ffffff 80%);
+}
+#navbar-top-firstrow li {
+	text-transform: initial;
+}
+#navbar-top-firstrow li a {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: initial;
+}
+.nav-bar-cell1-rev {
+	margin: 0;
+	background-color:#00008b;
+	color: #ffffff;
+	font-weight: bold;
+}
+ul.nav-list li {
+	padding: 3px 6px;
+}
+.about-language {
+	margin-right: 10px;
+	padding: 0;
+	font-size: 16px;
+	font-style: italic;
+}
+div.sub-nav {
+	background-color: #ffffff;
+}
+ol.sub-nav-list li {
+	font-size: 13px;
+}
+ol.sub-nav-list a.current-selection {
+	background-color: #eeeeff;
+}
+
+/*
+ * header - search
+ */
+ul#ui-id-1 {
+	border: solid 2px #5c5c5c;
+	border-top: 0;
+}
+ul#ui-id-1 .ui-autocomplete-category {
+	background-color: #ccccff;
+	color: #000000;
+	border-top: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	font-size: 18px;
+	padding: 3px;
+}
+ul#ui-id-1 li.result-item {
+	font-family: monospace;
+}
+ul#ui-id-1 div.ui-menu-item-wrapper.ui-state-active {
+	background-color: #eeeeff;
+	border: 1px solid #eeeeff;
+}
+ul#ui-id-1.ui-autocomplete > li.result-item:nth-child(odd) {
+	background-color: #ffffff;
+}
+
+ul#ui-id-1 li.result-item.ui-menu-item div.ui-menu-item-wrapper {
+	padding: 1px 4px;
+}
+
+/*
+ * Table
+ */
+.table-header {
+	display: none;
+}
+.col-first {
+	border-right: solid 2px #5c5c5c;
+}
+.col-first,
+.col-second,
+.col-last {
+	border-top: solid 2px #5c5c5c;
+}
+.col-first a {
+	font-size: initial;
+}
+.odd-row-color {
+	background-color: #ffffff;
+}
+
+/*
+ * Overview
+ */
+.header h1.title {
+	color: #000000;
+	font-size: calc(16px * 1.45);
+}
+body.module-index-page div.header h1.title {
+	text-align: center;
+}
+div.block {
+	color: #000000;
+	font-family: initial;
+	font-size: initial;
+}
+div.block blockquote dl dt,
+div.block blockquote dl dd {
+	margin-top: 0 !important;
+}
+#all-modules-table {
+	border: solid 2px #5c5c5c;
+}
+.summary-table {
+	border: initial;
+}
+div.table-tabs {
+	padding: 0;
+}
+#all-modules-table-tab0 {
+	margin: 0;
+	padding-bottom: 0;
+	width: 100%;
+	text-align: left;
+	font-family: initial;
+	font-size: x-large;
+	background-color: #ccccff;
+}
+#all-modules-table-tab1,
+#all-modules-table-tab2,
+#all-modules-table-tab3 {
+	display: none;
+}
+#all-modules-table div.summary-table.two-column-summary {
+	margin: 0;
+}
+
+/*
+ * Navigation
+ */
+.main-grid nav.toc {
+	background-color: #ffffff;
+	border-right: solid 6px #010101;
+}
+.main-grid nav.toc:before {
+	content: '';
+	width: 1px;
+	height: 100%;
+	background-color: #aaaaaa;
+	position: absolute;
+	right: -1px;
+}
+.main-grid nav.toc:after {
+	content: '';
+	width: 4px;
+	height: 100%;
+	background-color: #d0d0d0;
+	position: absolute;
+	right: -5px;
+}
+.main-grid nav.toc .toc-header {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: calc(16px * 0.9);
+}
+nav a:link,
+nav a:visited {
+	color: #0000ff;
+	font-family: initial;
+}
+nav.toc a:hover {
+	background-color: #eeeeff;
+}
+nav.toc a.current-selection {
+	background-color: #ddddff;
+}
+nav.toc button.hide-sidebar,
+nav.toc button.show-sidebar {
+	background-color: #eeeeff;
+}
+nav.toc button.hide-sidebar span,
+nav.toc button.show-sidebar span {
+	font-family: initial;
+}
+
+/*
+ * Module
+ */
+.main-grid > main[role='main'] {
+	padding: 8px;
+}
+.main-grid > main[role='main'] > hr {
+	border-color: initial;
+}
+
+.module-signature {
+	font-family: monospace;
+}
+.module-signature .element-name {
+	font-family: monospace;
+	font-weight: bold;
+}
+dl.notes > dt {
+	font-family: initial;
+	color: #000000;
+}
+dl.notes > dd {
+	font-family: initial;
+}
+dl.notes > dd a,
+dl.notes > dd a code {
+	font-family: initial;
+	font-size: initial;
+}
+.summary section.packages-summary,
+.summary section.services-summary,
+.summary section.modules-summary {
+	border: solid 2px #5c5c5c;
+}
+section.packages-summary h2,
+section.services-summary h2,
+section.modules-summary  h2 {
+	background-color: #ccccff;
+	margin: 0;
+	padding: 4px;
+	font-size: x-large;
+}
+section.packages-summary div.caption,
+section.services-summary div.caption,
+section.modules-summary  div.caption {
+	display: none;
+}
+section.packages-summary .col-last a code,
+section.services-summary .col-last a code {
+	font-family: monospace;
+}
+.summary-list .summary-table,
+.summary-list .details-table {
+	margin: 0;
+	border-width: 0;
+}
+#module-description div.block code {
+	font-family: monospace;
+	font-size: initial;
+}
+
+/*
+ * Package
+ */
+.package-signature {
+	font-family: monospace;
+}
+.package-signature .element-name {
+	font-family: monospace;
+	font-weight: bold;
+}
+#package-description div.block code {
+	font-family: monospace;
+	font-size: initial;
+}
+#package-description div.block a code {
+	font-family: initial;
+	font-size: initial;
+}
+#related-package-summary,
+#class-summary {
+	border: solid 2px #5c5c5c;
+}
+#related-package-summary div.caption,
+#class-summary div.caption {
+	padding: 3px 0 0 5px;
+	background-color: #ccccff;
+}
+#related-package-summary div.caption span,
+#class-summary           div.caption span {
+	width: 100%;
+	height: initial;
+	padding: 0;
+	background-color: #ccccff;
+	font-size: x-large;
+	color: #000000;
+}
+#related-package-summary div.summary-table div.col-plain {
+	border-top: solid 2px #5c5c5c;
+	border-right: solid 2px #5c5c5c;
+	font-weight: bold;
+	font-size: initial;
+}
+#related-package-summary div.summary-table div.col-last code {
+	font-family: monospace;
+	font-size: initial;
+}
+#class-summary-tab0 {
+	width: 100%;
+	background-color: #ccccff;
+	font-family: initial;
+	font-size: x-large;
+	color: #000000;
+	text-align: left;
+	padding: 3px 5px;
+	margin: 0;
+}
+#class-summary-tab1,
+#class-summary-tab2,
+#class-summary-tab3,
+#class-summary-tab4,
+#class-summary-tab5,
+#class-summary-tab6 {
+	display: none;
+}
+#class-summary .class-summary.col-last .block code {
+	font-family: monospace;
+	font-size: initial;
+}
+
+/*
+ * Class
+ */
+.class-declaration-page .header h1.title {
+	margin-bottom: 30px;
+}
+.class-declaration-page div.inheritance a {
+	font-family: monospace;
+	font-weight: initial;
+}
+.class-declaration-page div.inheritance {
+	margin-top: 3px;
+	font-family: monospace;
+	font-weight: bold;
+}
+#class-description dl.notes dt {
+	font-size: initial;
+}
+#class-description dl.notes dd {
+	padding-left: 25px;
+	margin-top: 1px;
+}
+#class-description > hr {
+	border-color: initial;
+}
+div.type-signature {
+	margin-top: 16px;
+	font-family: monospace;
+	line-height: initial;
+}
+#class-description .block code {
+	font-family: monospace;
+}
+#class-description .horizontal-scroll > .notes dd {
+	font-size: 16px;
+}
+#class-description .horizontal-scroll > .notes dd code {
+	font-family: monospace;
+	font-size: initial;
+}
+#class-description .snippet-container .snippet .language-java {
+	font-family: monospace;
+	font-size: initial;
+}
+#class-description div.horizontal-scroll div.block pre {
+	font-family: monospace;
+	font-size: initial;
+}
+#class-description {
+	padding-bottom: 12px;
+	border-bottom: solid 1px #000000;
+	margin-bottom: 18px;
+}
+#class-description .horizontal-scroll .deprecation-block .deprecated-label {
+	font-family: initial;
+}
+#class-description .horizontal-scroll .deprecation-block .deprecation-comment {
+	font-family: initial;
+	font-style: initial;
+}
+
+/*
+ * Class - summaray
+ */
+#field-summary h2 {
+	margin: 0;
+	padding: 5px 4px 3px 4px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+	font-style: initial;
+}
+#field-summary div.caption {
+	display: none;
+}
+#field-summary div.col-first {
+	border-top-width: 0;
+	border-left: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	padding: 0 4px;
+	text-align: right;
+}
+#field-summary div.col-first code {
+	font-family: monospace;
+	font-size: small;
+}
+#field-summary div.col-second {
+	border-top-width: 0;
+	border-bottom: solid 2px #5c5c5c;
+	padding: 1px 4px;
+}
+#field-summary div.col-second code a {
+	font-family: monospace;
+	font-size: initial;
+}
+#field-summary div.col-last {
+	border-top-width: 0;
+	border-right: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+}
+#field-summary div.col-last .deprecation-comment code {
+	font-family: monospace;
+	font-size: initial;
+}
+#field-summary div.inherited-list {
+	margin-top: 24px;
+	border: solid 2px #5c5c5c;
+}
+#field-summary div.inherited-list h3 {
+	box-sizing: border-box;
+	max-width:initial;
+	width: 100%;
+	height: 32px;
+	padding: 3px;
+	border-bottom: solid 2px #5c5c5c;
+	background-color: #eeeeff;
+	display: flex;
+	align-items: center;
+}
+#field-summary div.inherited-list h3 a:link {
+	color: #0000ff;
+}
+#field-summary div.inherited-list h3 a:visited {
+	color: #551a8b;
+}
+#field-summary div.inherited-list code {
+	line-height: initial;
+	padding: 3px;
+	background-color: #ffffff;
+	font-family: monospace;
+	font-size: initial;
+}
+#nested-class-summary h2 {
+	margin: 0;
+	padding: 5px 4px 3px 4px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+	font-style: initial;
+}
+#nested-class-summary div.caption {
+	display: none;
+}
+#nested-class-summary div.summary-table div.col-first {
+	border-top-width: 0;
+	border-left: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	padding: 0 3px;
+	line-height: initial;
+}
+#nested-class-summary div.summary-table div.col-first code {
+	font-family: monospace;
+	font-size: small;
+}
+#nested-class-summary div.summary-table div.col-second {
+	border-top-width: 0;
+	border-bottom: solid 2px #5c5c5c;
+	padding: 0 3px;
+	line-height: initial;
+}
+#nested-class-summary div.summary-table div.col-second code {
+	font-family: monospace;
+	font-size: initial;
+}
+#nested-class-summary div.summary-table div.col-last {
+	border-top-width: 0;
+	border-bottom: solid 2px #5c5c5c;
+	border-right: solid 2px #5c5c5c;
+}
+#nested-class-summary .inherited-list {
+	border: solid 2px #5c5c5c;
+}
+#nested-class-summary .inherited-list h3 {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: initial;
+	height: 32px;
+	padding: 0 3px;
+	background-color: #eeeeff;
+	color: #000000;
+	font-family: initial;
+	font-size: initial;
+	display: flex;
+	align-items: center;
+	line-height: initial;
+}
+#nested-class-summary .inherited-list h3 a:link {
+	color: #0000ff;
+}
+#nested-class-summary .inherited-list h3 a:visited {
+	color: #551a8b;
+}
+#nested-class-summary .inherited-list code {
+	background-color: initial;
+	border-top: solid 2px #5c5c5c;
+	padding: 3px;
+	font-family: monospace;
+	font-size: initial;
+	line-height: initial;
+}
+#constructor-summary h2 {
+	margin: 0;
+	padding: 5px 4px 3px 4px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+	font-style: initial;
+}
+#constructor-summary div.caption {
+	display: none;
+}
+#constructor-summary div.col-first {
+	border-top-width: 0;
+	border-bottom: solid 2px #5c5c5c;
+	border-left: solid 2px #5c5c5c;
+	border-right-width: 0;
+	padding: 0 3px;
+	line-height: initial;
+}
+#constructor-summary div.col-first code {
+	font-family: monospace;
+	font-size: small;
+}
+#constructor-summary div.col-constructor-name {
+	border-left: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	padding: 0 3px;
+	line-height: initial;
+}
+#constructor-summary div.col-constructor-name code {
+	font-family: monospace;
+	font-size: small;
+}
+#constructor-summary div.col-last {
+	border-top-width: 0;
+	border-right: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+}
+#constructor-summary div.col-last .block {
+	margin: 0;
+}
+#constructor-summary div.col-last .block code {
+	font-family: monospace;
+	font-size: initial;
+}
+#method-summary {
+	margin-bottom: 40px;
+}
+#method-summary h2 {
+	margin: 0;
+	padding: 5px 4px 3px 4px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+	font-style: initial;
+}
+#method-summary-table div.table-tabs {
+	display: none;
+}
+#method-summary div.col-first {
+	border-top-width: 0;
+	border-left: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	padding: 0 4px;
+	text-align: right;
+}
+#method-summary div.col-first code {
+	font-family: monospace;
+	font-size: small;
+}
+#method-summary div.col-second {
+	border-top-width: 0;
+	border-bottom: solid 2px #5c5c5c;
+	padding: 1px 4px;
+}
+#method-summary div.col-second code {
+	font-family: monospace;
+	font-size: initial;
+}
+#method-summary div.col-second code a {
+	font-family: monospace;
+	font-size: initial;
+}
+#method-summary div.col-last {
+	border-top-width: 0;
+	border-right: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+}
+#method-summary div.col-last code {
+	font-family: monospace;
+	font-size: initial;
+}
+#method-summary div.inherited-list {
+	margin-top: 24px;
+	border: solid 2px #5c5c5c;
+}
+#method-summary div.inherited-list h3 {
+	box-sizing: border-box;
+	max-width:initial;
+	width: 100%;
+	height: 32px;
+	padding: 3px;
+	border-bottom: solid 2px #5c5c5c;
+	background-color: #eeeeff;
+	display: flex;
+	align-items: center;
+}
+#method-summary div.inherited-list h3 a:link {
+	color: #0000ff;
+}
+#method-summary div.inherited-list h3 a:visited {
+	color: #551a8b;
+}
+#method-summary div.inherited-list code {
+	line-height: initial;
+	padding: 3px;
+	background-color: #ffffff;
+	font-family: monospace;
+	font-size: initial;
+}
+/*
+ * Class - detail
+ */
+#field-detail       h2,
+#constructor-detail h2,
+#method-detail      h2 {
+	margin: 0;
+	padding: 5px 4px 3px 4px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+	font-style: initial;
+}
+#field-detail       .member-list li,
+#constructor-detail .member-list li,
+#method-detail      .member-list li {
+	margin-top: 20px;
+	position: relative;
+}
+#field-detail       .member-list li section.detail,
+#constructor-detail .member-list li section.detail,
+#method-detail      .member-list li section.detail {
+	border-bottom: solid 1px #9a9a9a;
+}
+#field-detail       .member-list li section.detail:before,
+#constructor-detail .member-list li section.detail:before,
+#method-detail      .member-list li section.detail:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 100%;
+	height: 1px;
+	background-color: #eeeeee;
+}
+#field-detail       .detail h3,
+#constructor-detail .detail h3,
+#method-detail      .detail h3 {
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	color: #000000;
+	border-width: 0;
+	font-size: calc(16px * 1.17);
+}
+body.class-declaration-page section.detail:target > h3 > a.anchor-link > img, body.class-declaration-page section.detail > h3:target > a.anchor-link > img {
+	filter: initial;
+}
+#field-detail       .detail .horizontal-scroll,
+#constructor-detail .detail .horizontal-scroll,
+#method-detail      .detail .horizontal-scroll {
+	padding: 0;
+}
+#field-detail       .detail .horizontal-scroll .member-signature,
+#constructor-detail .detail .horizontal-scroll .member-signature,
+#method-detail      .detail .horizontal-scroll .member-signature {
+	margin-top: 18px;
+	font-family: monospace;
+	font-size: initial;
+}
+#field-detail       .detail .horizontal-scroll .member-signature .element-name,
+#constructor-detail .detail .horizontal-scroll .member-signature .element-name,
+#method-detail      .detail .horizontal-scroll .member-signature .element-name {
+	font-weight: bold;
+}
+#field-detail       .detail .horizontal-scroll .block,
+#constructor-detail .detail .horizontal-scroll .block,
+#method-detail      .detail .horizontal-scroll .block {
+	margin-left: 40px;
+	margin-bottom: 16px;
+}
+#field-detail       .detail .horizontal-scroll .block code,
+#constructor-detail .detail .horizontal-scroll .block code,
+#method-detail      .detail .horizontal-scroll .block code {
+	font-family: monospace;
+	font-size: initial;
+}
+#field-detail       .detail .horizontal-scroll .notes,
+#constructor-detail .detail .horizontal-scroll .notes,
+#method-detail      .detail .horizontal-scroll .notes {
+	margin-left: 40px;
+	margin-bottom: 11px;
+}
+#field-detail       .detail .horizontal-scroll .notes dt,
+#constructor-detail .detail .horizontal-scroll .notes dt,
+#method-detail      .detail .horizontal-scroll .notes dt {
+	font-size: initial;
+}
+#field-detail       .detail .horizontal-scroll .notes dd,
+#constructor-detail .detail .horizontal-scroll .notes dd,
+#method-detail      .detail .horizontal-scroll .notes dd {
+	margin: 0;
+	margin-left: 40px;
+	font-size: initial;
+}
+#field-detail       .detail .horizontal-scroll .notes dd .tag-list li a code,
+#constructor-detail .detail .horizontal-scroll .notes dd code,
+#method-detail      .detail .horizontal-scroll .notes dd code,
+#constructor-detail .detail .horizontal-scroll .notes dd code a,
+#method-detail      .detail .horizontal-scroll .notes dd code a {
+	font-family: monospace;
+	font-size: initial;
+}
+#method-detail .member-list .detail div.block pre {
+	font-family: monospace;
+	font-size: initial;
+}
+#field-detail       .detail .horizontal-scroll .deprecation-block,
+#constructor-detail .detail .horizontal-scroll .deprecation-block,
+#method-detail      .detail .horizontal-scroll .deprecation-block {
+	margin-left: 40px;
+}
+#field-detail       .detail .horizontal-scroll .deprecation-block .deprecated-label,
+#constructor-detail .detail .horizontal-scroll .deprecation-block .deprecated-label,
+#method-detail      .detail .horizontal-scroll .deprecation-block .deprecated-label {
+	font-family: initial;
+}
+#field-detail       .detail .horizontal-scroll .deprecation-block .deprecation-comment,
+#constructor-detail .detail .horizontal-scroll .deprecation-block .deprecation-comment,
+#method-detail      .detail .horizontal-scroll .deprecation-block .deprecation-comment {
+	font-family: initial;
+	font-style: initial;
+}
+#field-detail       .detail .horizontal-scroll .deprecation-block .deprecation-comment code,
+#constructor-detail .detail .horizontal-scroll .deprecation-block .deprecation-comment code,
+#method-detail      .detail .horizontal-scroll .deprecation-block .deprecation-comment code {
+	font-family: monospace;
+	font-size: initial;
+}
+
+/*
+ * Use
+ */
+body.package-use-page div.header h1.title,
+body.class-use-page div.header h1.title {
+	text-align: center;
+	font-size: 24px;
+}
+main > div.caption {
+	padding: 3px;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	font-size: x-large;
+}
+.class-use-page   .caption span,
+.package-use-page .caption span {
+	height: initial;
+	padding: 0;
+	background-color: #ccccff;
+	color: #000000;
+}
+body.package-use-page div.summary-table div.col-first.table-header,
+body.class-use-page   div.summary-table div.col-first.table-header {
+	display: none;
+}
+body.package-use-page div.summary-table div.col-first,
+body.class-use-page   div.summary-table div.col-first {
+	border-left: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+	padding: 3px;
+	display: flex;
+	align-items: center;
+}
+body.package-use-page div.summary-table div.col-last,
+body.class-use-page div.summary-table div.col-last {
+	border-right: solid 2px #5c5c5c;
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+	align-items: center;
+	padding: 3px;
+}
+body.package-use-page div.summary-table div.col-last div.block,
+body.class-use-page div.summary-table div.col-last div.block {
+	margin: 0;
+}
+body.package-use-page section.package-uses section.detail div.caption {
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	padding: 3px;
+}
+body.package-use-page section.package-uses section.detail div.caption span {
+	font-size: 24px;
+}
+body.class-use-page   section.class-uses section.detail h2 {
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+	padding: 3px;
+	font-size: 24px;
+	font-style: initial;
+	margin: 42px 0;
+}
+body.class-use-page   section.class-uses section.detail div.caption {
+	background-color: #eeeeff;
+	border: solid 2px #5c5c5c;
+	padding: 3px;
+}
+body.class-use-page   section.class-uses section.detail div.caption span {
+	background-color: #eeeeff;
+}
+body.class-use-page   div.summary-table div.col-first code {
+	font-family: monospace;
+	font-size: initial;
+}
+body.package-use-page div.summary-table div.col-second,
+body.class-use-page div.summary-table div.col-second {
+	border-bottom: solid 2px #5c5c5c;
+	border-top: initial;
+	align-items: center;
+	padding: 3px;
+}
+body.package-use-page div.summary-table div.col-second a,
+body.class-use-page div.summary-table div.col-second a{
+	font-family: monospace;
+	font-size: initial;
+}
+
+/*
+ * Tree
+ */
+body.tree-page         div.header h1.title,
+body.package-tree-page div.header h1.title {
+	text-align: center;
+}
+body.tree-page         ul.horizontal,
+body.package-tree-page ul.horizontal {
+	padding-left: 40px;
+}
+body.tree-page         ul.horizontal li a,
+body.package-tree-page ul.horizontal li a {
+	font-size: initial;
+}
+body.tree-page         section.hierarchy:first-of-type,
+body.package-tree-page section.hierarchy:first-of-type {
+	border-top: solid 1px #9a9a9a;
+}
+body.tree-page         section.hierarchy h2,
+body.package-tree-page section.hierarchy h2 {
+	font-size: 24px;
+}
+
+/*
+ * Preview, New, Deprecated
+ */
+body.preview-list-page    div.header h1,
+body.new-api-list-page    div.header h1,
+body.deprecated-list-page div.header h1 {
+	padding-bottom: 20px;
+	border-bottom: solid 4px #5c5c5c;
+	text-align: center;
+}
+body.preview-list-page    h2[title="Contents"],
+body.new-api-list-page    h2[title="Contents"],
+body.deprecated-list-page h2[title="Contents"] {
+	font-size: initial;
+	margin-bottom: 16px;
+}
+body.preview-list-page    ul.contents-list,
+body.new-api-list-page    ul.contents-list,
+body.deprecated-list-page ul.contents-list {
+	padding-left: 40px;
+	list-style: initial;
+}
+body.preview-list-page    ul.contents-list li a,
+body.new-api-list-page    ul.contents-list li a,
+body.deprecated-list-page ul.contents-list li a {
+	font-size: initial;
+}
+body.preview-list-page    ul.block-list li > div,
+body.new-api-list-page    ul.block-list li > div,
+body.deprecated-list-page ul.block-list li > div {
+	border: solid 2px #5c5c5c;
+}
+body.preview-list-page    ul.block-list div.caption,
+body.new-api-list-page    ul.block-list div.caption,
+body.deprecated-list-page ul.block-list div.caption {
+	padding: 3px;
+	padding-bottom: 0;
+	background-color: #ccccff;
+	font-size: x-large;
+}
+body.preview-list-page    ul.block-list div.caption span,
+body.new-api-list-page    ul.block-list div.caption span,
+body.deprecated-list-page ul.block-list div.caption span {
+	height: initial;
+	padding: 3px;
+	padding-bottom: 0;
+	background-color: #ccccff;
+	color: initial;
+}
+body.preview-list-page    ul.block-list div.col-summary-item-name,
+body.new-api-list-page    ul.block-list div.col-summary-item-name,
+body.deprecated-list-page ul.block-list div.col-summary-item-name {
+	border-top: solid 2px #5c5c5c;
+	border-right: solid 2px #5c5c5c;
+}
+body.preview-list-page main    > ul.block-list div.col-summary-item-name a,
+body.new-api-list-page main    > ul.block-list div.col-summary-item-name a,
+body.deprecated-list-page main > ul.block-list div.col-summary-item-name a {
+	font-weight: initial;
+	font-size: initial;
+}
+body.preview-list-page main > ul.block-list div.col-summary-item-name sup a {
+	font-size: 8px;
+}
+body.preview-list-page    ul.block-list div.col-second,
+body.new-api-list-page    ul.block-list div.col-second,
+body.deprecated-list-page ul.block-list div.col-second {
+	border-right: solid 2px #5c5c5c;
+}
+body.preview-list-page ul.block-list div.col-last a code,
+body.new-api-list-page ul.block-list div.col-last a,
+body.new-api-list-page ul.block-list div.col-last a code,
+body.deprecated-list-page ul.block-list div.col-last a,
+body.deprecated-list-page ul.block-list div.col-last a code {
+	font-family: monospace;
+	font-size: initial;
+}
+body.preview-list-page ul.block-list div.summary-table.three-column-summary,
+body.new-api-list-page ul.block-list div.summary-table.three-column-release-summary,
+body.deprecated-list-page ul.block-list div.summary-table.three-column-release-summary {
+	margin-bottom: 0;
+}
+
+/*
+ * Search
+ */
+body.search-page div#result-section div.table-tabs button.page-search-header {
+	background-color: #eeeeff;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body.search-page div#result-section div.table-tabs button.page-search-header.active-table-tab {
+	background-color: #00008b;
+	color: #ffffff;
+}
+body.search-page div#result-section div.result-table div.table-header {
+	display: grid;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ccccff;
+	border: solid 2px #5c5c5c;
+}
+body.search-page div#result-section div.result-table div.table-header span.table-header {
+	display: grid;
+	background-color: #ccccff;
+	font-size: initial;
+	padding: 0;
+	padding-top: 6px;
+	padding-bottom: 3px;
+	padding-left: 12px;
+}
+body.search-page div#result-section div.result-table div.table-header span.table-header:first-child {
+	border-right: solid 2px #5c5c5c;
+}
+body.search-page div#result-section div.result-table a.search-result-link {
+	border: solid 2px #5c5c5c;
+	border-top-width: 0;
+	text-decoration: none;
+}
+body.search-page div#result-section div.result-table a.search-result-link:nth-child(odd) {
+	background-color: initial;
+}
+body.search-page div#result-section div.result-table a.search-result-link.selected {
+	background-color: #eeeeff;
+}
+body.search-page div#result-section div.result-table span.search-result-label {
+	font-family: Arial, Helvetica, sans-serif;
+	border-right: solid 2px #5c5c5c;
+}
+body.search-page div#result-section div.result-table span.search-result-desc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: initial;
+}
+
+

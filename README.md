@@ -7,6 +7,10 @@ Usage
 ------------
 
 #### In the case of create a new javadoc
+- java25  
+```
+javadoc --add-stylesheet classic-stylesheet25.css ... 
+```
 - java21  
 ```
 javadoc --add-stylesheet classic-stylesheet21.css ... 
@@ -25,6 +29,8 @@ javadoc -stylesheetfile classic-stylesheet.css ...
 ```
 
 #### To change the style of an existing javadoc
+- java25  
+Add classic-stylesheet25.css to css
 - java21  
 Add classic-stylesheet21.css to css
 - java17  
@@ -38,6 +44,10 @@ Replace the existing stylesheet.css.
 
 
 #### You can also change style in your bookmarklet. Please add the following link to your bookmark.  
+- java25  
+```js
+javascript:(function(){var cs=document.createElement(%22link%22);cs.rel=%22stylesheet%22;cs.type=%22text/css%22;cs.href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet25.css%22;document.getElementsByTagName(%22head%22)[0].appendChild(cs);})()
+```
 - java21  
 ```js
 javascript:(function(){var cs=document.createElement(%22link%22);cs.rel=%22stylesheet%22;cs.type=%22text/css%22;cs.href=%22https://junk-box.github.io/classic-javadoc-stylesheet/classic-stylesheet21.css%22;document.getElementsByTagName(%22head%22)[0].appendChild(cs);})()
