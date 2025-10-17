@@ -6,7 +6,7 @@
  * Licensed under the MIT license
  * http://www.opensource.org/licenses/mit-license.php
  *
- * Date: 2025-10-04
+ * Date: 2025-10-18
  */
 
 /*
@@ -745,6 +745,7 @@ div.type-signature {
 	color: #000000;
 	border-width: 0;
 	font-size: calc(16px * 1.17);
+	overflow: hidden;
 }
 body.class-declaration-page section.detail:target > h3 > a.anchor-link > img, body.class-declaration-page section.detail > h3:target > a.anchor-link > img {
 	filter: initial;
