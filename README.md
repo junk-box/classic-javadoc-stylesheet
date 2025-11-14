@@ -3,6 +3,8 @@
 
 This is a stylesheet to change the javadoc of Java 7 or later to the old style of Java 6 or earlier.
 
+![screenshot](docs/img/ss.png)
+
 Usage
 ------------
 
